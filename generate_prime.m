@@ -17,3 +17,5 @@ while n>0
     end
     n = n+1;
 end
+%this prime number is used to generate prime number before interruption. 
+

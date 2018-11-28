@@ -50,7 +50,7 @@ disp(['The extension of bar23 is',num2str(double(e23))]);
 disp(['The extension of bar13 is',num2str(double(e13))]);
 
 disp(['The vertical movement is',num2str(double(v3))]);
-
+bi
 
 disp(['The stress in bar12 is:',num2str(double(stress1))]);
 disp(['The stress in bar13 is:',num2str(double(stress3))]);

@@ -20,7 +20,7 @@ F=input('Type the condition of the force(8000or12000(N))');
 
 
 syms t12 t23 t13;
-[t13,t12,t23]=solve(t13 * cos(j2 *pi/180)+t23 * cos(j1 * pi/180)==0,t13 * cos(j2*pi/180)+t23 * cos(j1*pi/180)==F,7*F/16+t12*sin(i1*pi/180)-t23*sin(i2 * pi/180)==0);
+[t12,t13,t23]=solve(t13 * sin(j2 *pi/180)==t23 * sin(j1 * pi/180),t13 * cos(j2*pi/180)+t23 * cos(j1*pi/180)==F,t12*cos(i1*pi/180)==-1*t23*cos(i2 * pi/180));
 
 syms e12 e13 e23
 e12=t12*l1/(a1*E);

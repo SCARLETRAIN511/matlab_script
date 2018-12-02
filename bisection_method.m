@@ -17,5 +17,6 @@ while abs(f1) > 0.000001
 end
 disp(c)
 
+
         
     

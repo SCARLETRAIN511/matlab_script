@@ -1,6 +1,6 @@
 n=2;
 p=[];
-while n>0
+while n >0
     is_prime = 1;
     for i = 2:round(n/2)
         

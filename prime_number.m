@@ -1,16 +1,20 @@
 n=input('input the number:');
 
-for i=2:round(n/2)
-    if mod(n,i)==0
-        disp('it is a not a prime number')
-        p=1;
-        break
-    else
-        p=0;
+if (n<=2)
+    disp('it is a prime number');
+else
+    for i=2:round(n/2)
+        if mod(n,i)==0
+            disp('it is a not a prime number')
+            p=1;
+            break
+        else
+            p=0;
+        end
     end
-end
-if p==0
-    disp('it is a prime number')
+    if p==0
+        disp('it is a prime number')
+    end
 end
 
     

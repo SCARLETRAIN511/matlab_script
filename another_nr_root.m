@@ -18,13 +18,11 @@ end
     
     
 x=input('input the initial guess for xo:');
-y=a*x^2+b*x+c;
-while abs(y)>eps
+dydx=100;
+while dydx>eps
+    dydx=(-(a*x^2+b*x+c)/(2*a*x+b));
+    x=x+dydx;
     
-    x=x-((a*x^2+b*x+c)/(2*a*x+b));
-    y=a*x^2+b*x+c;
   
 end
 disp(x)
-    
-    

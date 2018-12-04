@@ -2,9 +2,9 @@ clear
 clc
 n=12;
 p=[2;3;5;7;11];
+count=1;
 
-
-while n>0
+while count>0
     is_prime = 1;
     is_palindromic=1;
     for i = 2:round(n/2)
@@ -27,10 +27,10 @@ while n>0
     if is_prime==1 && is_palindromic==1 
         
         p = [p;n];
-        
-        
+        count=count+1;
     end
     n = n+1;
+    
 end
 disp(p)
 

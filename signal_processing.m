@@ -12,6 +12,6 @@ for i = 1:301
     
         
 end
-plot(x,y);
+plot(x,y,'--xr');
 hold on;
-plot(x,z)
+plot(x,z,'-ok');

@@ -15,7 +15,7 @@ switch(i)
     case('Saturday')
         disp('Good')
     case('Sunday')
-        i=unidrnd(4);
+        i=unidrnd(3);
         if i==1
             disp('sad')
         elseif i ==2

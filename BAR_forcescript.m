@@ -41,21 +41,21 @@ syms h2 h3 v3;
 [h2,h3,v3]=solve(e13==cos(j2*pi/180)*v3+h3*cos((pi/2)-j2),e12==cos(i1*pi/180)*h2,e23==sin(j2*pi/180)*v3+cos(i2*pi/180)*h2-cos(pi/2-j1*pi/180)*h3);
 
 
-disp(['The bar force in L13 is ',num2str(double(t13))]);
-disp(['The bar force in L12 is ',num2str(double(t12))]);
-disp(['The bar force in L23 is ',num2str(double(t23))]);
+disp(['The bar force in LAC is ',num2str(double(t13))]);
+disp(['The bar force in LAB is ',num2str(double(t12))]);
+disp(['The bar force in LBC is ',num2str(double(t23))]);
 
-disp(['The extension of bar12 is',num2str(double(e12))]);
-disp(['The extension of bar23 is',num2str(double(e23))]);
-disp(['The extension of bar13 is',num2str(double(e13))]);
+disp(['The extension of barAB is',num2str(double(e12))]);
+disp(['The extension of barBC is',num2str(double(e23))]);
+disp(['The extension of barAC is',num2str(double(e13))]);
 
 disp(['The vertical movement is',num2str(double(v3))]);
 
 
-disp(['The stress in bar12 is:',num2str(double(stress1))]);
-disp(['The stress in bar13 is:',num2str(double(stress3))]);
-disp(['The stress in bar23 is:',num2str(double(stress2))]);
+disp(['The stress in barAB is:',num2str(double(stress1))]);
+disp(['The stress in barAC is:',num2str(double(stress3))]);
+disp(['The stress in barBC is:',num2str(double(stress2))]);
 
-disp(['The strain in bar12 is:',num2str(double(strain1))]);
-disp(['The strain in bar13 is:',num2str(double(strain3))]);
-disp(['The strain in bar23 is:',num2str(double(strain2))]);
+disp(['The strain in barAB is:',num2str(double(strain1))]);
+disp(['The strain in barAC is:',num2str(double(strain3))]);
+disp(['The strain in barBC is:',num2str(double(strain2))]);

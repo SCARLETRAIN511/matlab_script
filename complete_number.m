@@ -1,4 +1,4 @@
-for m = 1:500
+for m = 1:1000
     s=0;
     for i=1:m/2
         if mod(m,i)==0

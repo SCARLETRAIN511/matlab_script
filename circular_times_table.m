@@ -19,6 +19,6 @@ mult=input('Which number should we generate the tiems table off:');
          plot([x(i1+1),x(i2+1)],[y(i1+1),y(i2+1)],'k')
      end
  end
- 
+
          
  

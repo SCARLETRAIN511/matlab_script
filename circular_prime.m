@@ -27,7 +27,6 @@ while 1
     end
     if ((iscircprime==1)&(firsttime==1))
         disp(n)
-        allcprimes=[allcprimes,n];
     end
     n=n+2;
 end

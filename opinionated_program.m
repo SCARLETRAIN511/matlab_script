@@ -1,5 +1,6 @@
 clear
 clc
+while 1
 i=input('What day of the week?','s');
 switch(i)
     case('Monday')
@@ -31,4 +32,5 @@ switch(i)
         
         
         
+end
 end

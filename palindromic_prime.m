@@ -30,9 +30,10 @@ while count>0
         count=count+1;
     end
     n = n+1;
-    
+    disp(p)
+
 end
-disp(p)
+
 
 
 

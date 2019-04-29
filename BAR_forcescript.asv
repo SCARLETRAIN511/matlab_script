@@ -6,8 +6,8 @@ l2=input('input the length of L23:');%492.4mm
 l3=input('input the length of L13:');%782.6mm
 
 a1=input('input the area of L12:');%91.5*2mm^2
-a2=input('input the area of L23:');%50.9mm^2
-a3=input('input the area of L13:');%50.9*2mm^2
+a2=input('input the area of L23:');%50.9mm^
+a3=input('input the area of L13:');
 
 E=input('input the young modulus:');%69*10^9
 

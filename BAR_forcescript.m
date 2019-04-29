@@ -1,20 +1,20 @@
 clc
 clear 
 
-l1=input('input the length of L12:');%860.2mm
-l2=input('input the length of L23:');%492.4mm
-l3=input('input the length of L13:');%782.6mm
+l1=0.8602;%mm
+l2=0.4924;%mm
+l3=0.7826;%mm
 
-a1=input('input the area of L12:');%91.5*2mm^2
-a2=input('input the area of L23:');%50.9mm^2
-a3=input('input the area of L13:');%50.9*2mm^2
+a1=91.5*2*10^-6;%mm^2
+a2=50.9*10^-6;%mm^2
+a3=50.9*2*10^-6;%mm^2
 
 E=input('input the young modulus:');%69*10^9
 
-i1=input('input the i1 angle:');%35.54
-i2=input('input the i2 angle:');%23.96
-j1=input('input the j1 angle:');%66.04
-j2=input('input the j2 angle:');%26.56
+i1=35.54;%degree
+i2=23.96;
+j1=66.04;
+j2=26.56;
 
 F=input('Type the condition of the force(8000or12000(N))');
 
@@ -41,20 +41,20 @@ syms h2 h3 v3;
 [h2,h3,v3]=solve(e13==cos(j2*pi/180)*v3+h3*cos((pi/2)-j2),e12==cos(i1*pi/180)*h2,e23==sin(j2*pi/180)*v3+cos(i2*pi/180)*h2-cos(pi/2-j1*pi/180)*h3);
 
 
-disp(['The bar force in LAC is ',num2str(double(t13))]);
-disp(['The bar force in LAB is ',num2str(double(t12))]);
-disp(['The bar force in LBC is ',num2str(double(t23))]);
+disp(['The bar force in LAC is ',num2str(double(t13)),'N']);
+disp(['The bar force in LAB is ',num2str(double(t12)),'N']);
+disp(['The bar force in LBC is ',num2str(double(t23)),'N']);
 
-disp(['The extension of barAB is',num2str(double(e12))]);
-disp(['The extension of barBC is',num2str(double(e23))]);
-disp(['The extension of barAC is',num2str(double(e13))]);
+disp(['The extension of barAB is',num2str(double(e12)),'m']);
+disp(['The extension of barBC is',num2str(double(e23)),'m']);
+disp(['The extension of barAC is',num2str(double(e13)),'m']);
 
-disp(['The vertical movement is',num2str(double(v3))]);
+disp(['The vertical movement is',num2str(double(v3)),'m']);
 
 
-disp(['The stress in barAB is:',num2str(double(stress1))]);
-disp(['The stress in barAC is:',num2str(double(stress3))]);
-disp(['The stress in barBC is:',num2str(double(stress2))]);
+disp(['The stress in barAB is:',num2str(double(stress1)),'N/m^2']);
+disp(['The stress in barAC is:',num2str(double(stress3)),'N/m^2']);
+disp(['The stress in barBC is:',num2str(double(stress2)),'N/m^2']);
 
 disp(['The strain in barAB is:',num2str(double(strain1))]);
 disp(['The strain in barAC is:',num2str(double(strain3))]);
